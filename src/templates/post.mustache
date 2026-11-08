@@ -104,8 +104,8 @@
         <button type="button" class="btn btn-link mt-2" data-action="toggle-reaction" data-postid="{{id}}"
                 aria-pressed="{{#hasreacted}}true{{/hasreacted}}{{^hasreacted}}false{{/hasreacted}}"
                 aria-label="{{#str}} chuspasocial:react, local_chuspasocial {{/str}}">
-            {{#pix}} t/like, core {{/pix}}
-            <span class="reaction-count">{{reactions}}</span>
+            {{#pix}} i/star, core {{/pix}}
+            <span class="reaction-count" data-region="reaction-count">{{reactions}}</span>
         </button>
 
         <button type="button" class="btn btn-link mt-2" data-action="report" data-postid="{{id}}"
